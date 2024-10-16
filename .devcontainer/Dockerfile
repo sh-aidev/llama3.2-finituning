@@ -20,7 +20,7 @@ RUN apt-get update && \
 
 RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3.10 get-pip.py && rm get-pip.py
 
-# # Install Python dependencies
+# Install Python dependencies
 COPY requirements.txt .
 RUN pip3 install -r requirements.txt
 
